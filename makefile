@@ -3,8 +3,8 @@ TXT=$(DAT:.sc=.txt)
 
 all: pie.pdf
 
-pie.pdf: pie.dat pie.r
-	Rscript pie.r
+pie.pdf: pie.R pie.dat
+	Rscript $<
 
 %.txt: %.sc
 	sc -W % $< 1> $@ 2> /dev/null
