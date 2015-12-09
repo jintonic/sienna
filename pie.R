@@ -1,0 +1,5 @@
+dat <- scan("pie.dat")
+sum(dat)
+lbl <- c("Oil", "Fuel", "Insurance", "Exterior", "Car")
+pdf("pie.pdf")
+pie(dat, labels = lbl, main="Total cost: totv")
