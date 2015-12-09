@@ -13,5 +13,5 @@ rightstring D0 = "total"
 let A1 = @dts(2015,11,25)
 rightstring B1 = "car"
 let C1 = 5000
-let D1 = C1/1000
-goto A1 A0
+let D1 = C1
+goto D1 A0

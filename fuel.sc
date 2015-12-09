@@ -3,33 +3,33 @@
 
 set numeric color
 format 5 = "%F"
-format A 10 2 3
-format B 10 0 0
-format C 10 3 0
+format A 9 2 3
+format B 7 0 0
+format C 7 3 0
 format D 11 2 0
 format E 6 3 0
 format F 6 2 0
-format G 6 3 0
+format G 8 3 0
 color 1 = @white;@black
 color 7 = @white;@blue
-leftstring A0 = "date"
-leftstring B0 = "milage"
-leftstring C0 = "added"
-leftstring D0 = "efficiency"
-leftstring E0 = "price"
-leftstring F0 = "cost"
-leftstring G0 = "total"
+rightstring A0 = "date"
+rightstring B0 = "milage"
+rightstring C0 = "added"
+rightstring D0 = "efficiency"
+rightstring E0 = "price"
+rightstring F0 = "cost"
+rightstring G0 = "total"
 let A1 = @dts(2015,11,28)
 let B1 = 197482
 let C1 = 16.626
 let E1 = 1.819
 let F1 = 30.24
-let G1 = F1/1000
+let G1 = F1
 let A2 = @dts(2015,12,5)
 let B2 = 197665
 let C2 = 9.541
 let D2 = (B2-B1)/C2
 let E2 = 1.899
 let F2 = 18.12
-let G2 = G1+F2/1000
-goto D2 A0
+let G2 = G1+F2
+goto A0 A0
