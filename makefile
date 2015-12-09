@@ -1,6 +1,8 @@
 DAT=$(wildcard *.sc)
 TXT=$(DAT:.sc=.txt)
 
+.PHONY: all clean
+
 all: pie.pdf
 
 pie.pdf: pie.R pie.dat
