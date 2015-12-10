@@ -20,9 +20,13 @@ let D1 = C1
 let A2 = @dts(2015,12,1)
 rightstring B2 = "scratchwizard"
 let C2 = 65.41
-let D2 = D1+C2
+let D2 = C2+D1
 let A3 = @dts(2015,12,6)
 rightstring B3 = "duster"
 let C3 = 9.37
-let D3 = D2+C3
-goto D3 A0
+let D3 = C3+D2
+let A4 = @dts(2015,12,10)
+rightstring B4 = "washing"
+let C4 = 7
+let D4 = C4+D3
+goto D4 A0
