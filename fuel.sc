@@ -32,4 +32,11 @@ let D2 = (B2-B1)/C2
 let E2 = 1.899
 let F2 = 18.12
 let G2 = G1+F2
-goto A0 A0
+let A3 = @dts(2015,12,12)
+let B3 = 197806
+let C3 = 7.604
+let D3 = (B3-B2)/C3
+let E3 = 1.799
+let F3 = 13.68
+let G3 = G2+F3
+goto G3 A0
