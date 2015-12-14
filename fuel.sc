@@ -3,7 +3,7 @@
 
 set numeric color
 format 5 = "%F"
-format A 9 2 3
+format A 10 2 5
 format B 7 0 0
 format C 7 3 0
 format D 11 2 0
@@ -22,6 +22,7 @@ rightstring G0 = "total"
 let A1 = @dts(2015,11,28)
 let B1 = 197482
 let C1 = 16.626
+let D1 = @avg(D2:D3)
 let E1 = 1.819
 let F1 = 30.24
 let G1 = F1
@@ -39,4 +40,4 @@ let D3 = (B3-B2)/C3
 let E3 = 1.799
 let F3 = 13.68
 let G3 = G2+F3
-goto G3 A0
+goto D1 A0
