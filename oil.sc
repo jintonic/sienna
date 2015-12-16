@@ -3,7 +3,7 @@
 
 set numeric color
 format 5 = "%F"
-format A 9 2 3
+format A 10 2 5
 format B 7 0 0
 format C 6 2 0
 format D 7 2 0
@@ -13,8 +13,30 @@ rightstring A0 = "date"
 rightstring B0 = "milage"
 rightstring C0 = "cost"
 rightstring D0 = "total"
-let A1 = @dts(2015,12,6)
-let B1 = 197684
-let C1 = 35.88
-let D1 = C1
-goto C1 A0
+let A1 = @dts(2008,9,8)
+let B1 = 14743
+let A2 = @dts(2009,4,22)
+let B2 = 18957
+let A3 = @dts(2009,8,25)
+let B3 = 23297
+let A4 = @dts(2009,10,15)
+let B4 = 26183
+let A5 = @dts(2009,12,17)
+let B5 = 30797
+let A6 = @dts(2010,6,2)
+let B6 = 38956
+let A7 = @dts(2010,8,27)
+let B7 = 43487
+let A8 = @dts(2010,11,3)
+let B8 = 47304
+let A9 = @dts(2010,11,24)
+let B9 = 50823
+let A10 = @dts(2011,2,10)
+let B10 = 55719
+let A11 = @dts(2011,4,1)
+let B11 = 60721
+let A12 = @dts(2015,12,6)
+let B12 = 197684
+let C12 = 35.88
+let D12 = C12
+goto B11 A0
