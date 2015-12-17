@@ -16,7 +16,7 @@ rightstring A0 = "date"
 rightstring B0 = "dd"
 rightstring C0 = "milage"
 rightstring D0 = "dm"
-rightstring E0 = "dm/dd"
+rightstring E0 = "daily"
 rightstring F0 = "cost"
 rightstring G0 = "total"
 let A1 = @dts(2008,5,9)
@@ -221,4 +221,4 @@ let D40 = C40-C39
 let E40 = D40/B40
 let F40 = 35.88
 let G40 = F40
-goto E40 A0
+goto G37 A0
