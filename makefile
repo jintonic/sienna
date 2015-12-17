@@ -1,21 +1,23 @@
 DAT=$(wildcard *.sc)
 TXT=$(DAT:.sc=.txt)
+PDF=oil.pdf fuel.pdf
+PNG=pie.png
 
 .PHONY: all clean
 
-all: pie.pdf fuel.pdf
+all: $(PGN) $(PDF)
 
-pie.pdf: pie.R pie.dat
+%.png: %.R %.dat
 	Rscript $<
 
 pie.dat: $(TXT)
 	tail -q -n 1 $^ | awk '{print $$NF}' > $@
 
-fuel.pdf:fuel.txt
-	gnuplot fuel.gnu
+%.pdf:%.txt
+	gnuplot $*.gnu
 
 %.txt: %.sc
 	sc -W % $< 1> $@ 2> /dev/null
 
 clean:
-	rm `cat .gitignore`
+	rm -f `cat .gitignore`
