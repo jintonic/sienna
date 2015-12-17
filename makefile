@@ -1,13 +1,15 @@
 DAT=$(wildcard *.sc)
 TXT=$(DAT:.sc=.txt)
 PDF=oil.pdf fuel.pdf
-PNG=pie.png
 
 .PHONY: all clean
 
-all: $(PGN) $(PDF)
+all: pie.png oil.png daily.png $(PDF)
 
-%.png: %.R %.dat
+pie.png: pie.R pie.dat
+	Rscript $<
+
+oil.png daily.png: oil.R oil.txt
 	Rscript $<
 
 pie.dat: $(TXT)
