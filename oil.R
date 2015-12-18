@@ -1,23 +1,23 @@
+# fill empty cells with 0
 dat <- read.table("oil.txt", header=TRUE, fill=TRUE)
 
 # mileage between oil changes
-png("oil.png")
+pdf("mileage.pdf")
 hist(dat$dm, breaks=seq(2000,9000,400),
      border="red",
      col="yellow",
      las=1, # rotate y label by 90 degree
      main="", # histogram title
-     xlab="mileage between recorded oil changes",
-     ylab="number of times of recorded oil changes")
+     xlab="mileage between recorded oil changes [mile]",
+     ylab="times of recorded oil changes")
 
 # daily mileage
-png("daily.png")
 h<-hist(dat$daily, breaks=seq(0,200,20),
 	border="red",
 	col="yellow",
 	las=1, # rotate y label by 90 degree
 	main="", # histogram title
-	xlab="daily mileage",
+	xlab="daily mileage [mile]",
 	ylab="number of records",
 	#prob=T, # normalize histogram
 	)
@@ -38,4 +38,4 @@ yfit<-yfit*c/d
 
 # plot fitting function
 lines(xfit, yfit, col="blue", lwd=2)
-legend(130,12, sprintf("mean: %.1f mile",m))
+legend(110,12,bty="n",sprintf("mean: %.1f mile",m))
