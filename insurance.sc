@@ -12,6 +12,6 @@ rightstring A0 = "date"
 rightstring B0 = "cost"
 rightstring C0 = "total"
 let A1 = @dts(2015,12,1)
-let B1 = 105.98
+let B1 = 40
 let C1 = B1
-goto C1 A0
+goto B1 A0
