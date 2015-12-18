@@ -1,25 +1,27 @@
 DAT=$(wildcard *.sc)
 TXT=$(DAT:.sc=.txt)
-PDF=oil.pdf fuel.pdf
+PDF=cost.pdf mileage.pdf oil.pdf fuel.pdf
 
-.PHONY: all clean
+.PHONY: clean
 
-all: pie.png oil.png daily.png $(PDF)
+sienna.pdf: $(PDF)
+	gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=$@ $^
+	rm -f $^
 
-pie.png: pie.R pie.dat
+cost.pdf: cost.R cost.dat
 	Rscript $<
 
-oil.png daily.png: oil.R oil.txt
+mileage.pdf: oil.R oil.txt
 	Rscript $<
-
-pie.dat: $(TXT)
-	tail -q -n 1 $^ | awk '{print $$NF}' > $@
 
 %.pdf:%.txt
 	gnuplot $*.gnu
 
 %.txt: %.sc
 	sc -W % $< 1> $@ 2> /dev/null
+
+cost.dat: $(TXT)
+	tail -q -n 1 $^ | awk '{print $$NF}' > $@
 
 clean:
 	rm -f `cat .gitignore`
