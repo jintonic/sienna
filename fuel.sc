@@ -20,6 +20,7 @@ rightstring E0 = "price"
 rightstring F0 = "cost"
 rightstring G0 = "total"
 let A1 = @dts(2015,11,28)
+fmt A1 "%F"
 let B1 = 197482
 let C1 = 16.626
 let D1 = @avg(D2:D3)
@@ -27,6 +28,7 @@ let E1 = 1.819
 let F1 = 30.24
 let G1 = F1
 let A2 = @dts(2015,12,5)
+fmt A2 "%F"
 let B2 = 197665
 let C2 = 9.541
 let D2 = (B2-B1)/C2
@@ -34,10 +36,11 @@ let E2 = 1.899
 let F2 = 18.12
 let G2 = G1+F2
 let A3 = @dts(2015,12,12)
+fmt A3 "%F"
 let B3 = 197806
 let C3 = 7.604
 let D3 = (B3-B2)/C3
 let E3 = 1.799
 let F3 = 13.68
 let G3 = G2+F3
-goto D1 A0
+goto A3 A0
