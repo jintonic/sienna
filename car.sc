@@ -6,7 +6,7 @@ format 5 = "%F"
 format A 10 2 5
 format B 8 0 0
 format C 21 2 0
-format D 14 2 0
+format D 15 2 0
 color 1 = @white;@black
 color 7 = @white;@blue
 rightstring A0 = "date"
@@ -56,4 +56,9 @@ rightstring C12 = "sold"
 rightstring D12 = "Ponca, NE"
 let E12 = 5000
 let F12 = E12
-goto B12 A0
+let A13 = @dts(2015,12,18)
+rightstring C13 = "3rd owner registered"
+rightstring D13 = "Vermillion, SD"
+let E13 = 287.68
+let F13 = F12+E13
+goto F13 A0
