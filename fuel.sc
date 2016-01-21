@@ -48,6 +48,7 @@ let D4 = (B4-B3)/C4
 let E4 = 1.649
 let F4 = 14.72
 let G4 = G3+F4
+rightstring H4 = "low T, in town, heavy load"
 let A5 = @dts(2016,1,19)
 fmt A5 "%F"
 let B5 = 198031
@@ -56,4 +57,13 @@ let D5 = (B5-B4)/C5
 let E5 = 1.649
 let F5 = 10.09
 let G5 = G4+F5
-goto G5 A0
+rightstring H5 = "pure highway"
+let A6 = @dts(2016,1,21)
+fmt A6 "%F"
+let B6 = 198193
+let C6 = 8.636
+let D6 = (B6-B5)/C6
+let E6 = 1.599
+let F6 = 13.81
+let G6 = G5+F6
+goto H4 A0
