@@ -66,4 +66,12 @@ let D6 = (B6-B5)/C6
 let E6 = 1.599
 let F6 = 13.81
 let G6 = G5+F6
-goto H4 A0
+let A7 = @dts(2016,1,24)
+fmt A7 "%F"
+let B7 = 198314
+let C7 = 6.304
+let D7 = (B7-B6)/C7
+let E7 = 1.599
+let F7 = 10.08
+let G7 = G6+F7
+goto G7 A0
