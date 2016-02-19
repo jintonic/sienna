@@ -9,6 +9,9 @@ format C 7 3 0
 format D 11 2 0
 format E 6 3 0
 format F 6 2 0
+format H 27 2 0
+color 1 = @white;@black
+color 7 = @white;@blue
 rightstring A0 = "date"
 rightstring B0 = "milage"
 rightstring C0 = "added"
@@ -74,4 +77,12 @@ let D7 = (B7-B6)/C7
 let E7 = 1.599
 let F7 = 10.08
 let G7 = G6+F7
-goto G7 A0
+let A8 = @dts(2016,2,13)
+fmt A8 "%F"
+let B8 = 198414
+let C8 = 7.256
+let D8 = (B8-B7)/C8
+let E8 = 1.349
+let F8 = 9.79
+let G8 = G7+F8
+goto H8 A0
