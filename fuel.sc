@@ -60,7 +60,6 @@ let D5 = (B5-B4)/C5
 let E5 = 1.649
 let F5 = 10.09
 let G5 = G4+F5
-rightstring H5 = "pure highway"
 let A6 = @dts(2016,1,21)
 fmt A6 "%F"
 let B6 = 198193
@@ -85,4 +84,28 @@ let D8 = (B8-B7)/C8
 let E8 = 1.349
 let F8 = 9.79
 let G8 = G7+F8
-goto H8 A0
+let A9 = @dts(2016,3,1)
+fmt A9 "%F"
+let B9 = 198659
+let C9 = 12.942
+let D9 = (B9-B8)/C9
+let E9 = 1.699
+let F9 = 21.99
+let G9 = G8+F9
+let A10 = @dts(2016,3,1)
+fmt A10 "%F"
+let B10 = 198777
+let C10 = 5.907
+let D10 = (B10-B9)/C10
+let E10 = 1.699
+let F10 = 10.04
+let G10 = G9+F10
+let A11 = @dts(2016,3,5)
+fmt A11 "%F"
+let B11 = 198853
+let C11 = 3.936
+let D11 = (B11-B10)/C11
+let E11 = 1.659
+let F11 = 6.53
+let G11 = G10+F11
+goto E6 A0
