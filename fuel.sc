@@ -108,4 +108,68 @@ let D11 = (B11-B10)/C11
 let E11 = 1.659
 let F11 = 6.53
 let G11 = G10+F11
-goto E6 A0
+let A12 = @dts(2016,3,10)
+fmt A12 "%F"
+let B12 = 199034
+let C12 = 8.789
+let D12 = (B12-B11)/C12
+let E12 = 1.799
+let F12 = 15.81
+let G12 = G11+F12
+let A13 = @dts(2016,3,29)
+fmt A13 "%F"
+let B13 = 199238
+let C13 = 10.041
+let D13 = (B13-B12)/C13
+let E13 = 1.939
+let F13 = 19.47
+let G13 = G12+F13
+let A14 = @dts(2016,3,31)
+fmt A14 "%F"
+let B14 = 199348
+let C14 = 5.732
+let D14 = (B14-B13)/C14
+let E14 = 1.939
+let F14 = 11.11
+let G14 = G13+F14
+let A15 = @dts(2016,3,31)
+fmt A15 "%F"
+let B15 = 199483
+let C15 = 8.321
+let D15 = (B15-B14)/C15
+let E15 = 2.299
+let F15 = 19.13
+let G15 = G14+F15
+let A16 = @dts(2016,3,31)
+fmt A16 "%F"
+let B16 = 199629
+let C16 = 9.029
+let D16 = (B16-B15)/C16
+let E16 = 1.979
+let F16 = 17.87
+let G16 = G15+F16
+let A17 = @dts(2016,4,2)
+fmt A17 "%F"
+let B17 = 199823
+let C17 = 9.338
+let D17 = (B17-B16)/C17
+let E17 = 1.879
+let F17 = 17.55
+let G17 = G16+F17
+let A18 = @dts(2016,4,2)
+fmt A18 "%F"
+let B18 = 200100
+let C18 = 13.359
+let D18 = (B18-B17)/C18
+let E18 = 1.949
+let F18 = 26.04
+let G18 = G17+F18
+let A19 = @dts(2016,4,3)
+fmt A19 "%F"
+let B19 = 200308
+let C19 = 10.052
+let D19 = (B19-B18)/C19
+let E19 = 1.779
+let F19 = 17.88
+let G19 = G18+F19
+goto E19 A0
