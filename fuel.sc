@@ -172,4 +172,12 @@ let D19 = (B19-B18)/C19
 let E19 = 1.779
 let F19 = 17.88
 let G19 = G18+F19
-goto E19 A0
+let A20 = @dts(2016,4,30)
+fmt A20 "%F"
+let B20 = 200542
+let C20 = 13.288
+let D20 = (B20-B19)/C20
+let E20 = 1.889
+let F20 = 25.1
+let G20 = G19+F20
+goto E20 A0
