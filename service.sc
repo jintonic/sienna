@@ -80,4 +80,4 @@ let A20 = @dts(2016,5,10)
 rightstring B20 = "washed"
 let D20 = 7
 let E20 = D20+E19
-goto E20 A0
+goto E19 A0
