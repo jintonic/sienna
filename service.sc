@@ -76,4 +76,8 @@ let A19 = @dts(2015,12,10)
 rightstring B19 = "washed"
 let D19 = 7
 let E19 = D19+E18
-goto C15 A0
+let A20 = @dts(2016,5,10)
+rightstring B20 = "washed"
+let D20 = 7
+let E20 = D20+E19
+goto E20 A0
