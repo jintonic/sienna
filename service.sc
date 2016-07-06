@@ -72,12 +72,17 @@ let A18 = @dts(2015,12,6)
 rightstring B18 = "duster bought"
 let D18 = 9.37
 let E18 = D18+E17
-let A19 = @dts(2015,12,10)
-rightstring B19 = "washed"
-let D19 = 7
+let A19 = @dts(2015,12,6)
+rightstring B19 = "oil, filter changed"
+let C19 = 197684
+let D19 = 35.88
 let E19 = D19+E18
-let A20 = @dts(2016,5,10)
+let A20 = @dts(2015,12,10)
 rightstring B20 = "washed"
 let D20 = 7
 let E20 = D20+E19
-goto E19 A0
+let A21 = @dts(2016,5,10)
+rightstring B21 = "washed"
+let D21 = 7
+let E21 = D21+E20
+goto E20 A0
