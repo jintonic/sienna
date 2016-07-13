@@ -61,4 +61,9 @@ rightstring C13 = "3rd owner registered"
 rightstring D13 = "Vermillion, SD"
 let E13 = 287.68
 let F13 = F12+E13
-goto F13 A0
+let A14 = @dts(2016,6,25)
+rightstring C14 = "registration renewed"
+rightstring D14 = "Vermillion, SD"
+let E14 = 99
+let F14 = F13+E14
+goto F14 A0
