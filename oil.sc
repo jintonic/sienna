@@ -226,6 +226,6 @@ let B41 = (A41-A40)/3600/24
 let C41 = 202669
 let D41 = C41-C40
 let E41 = D41/B41
-let F41 = 39.88
+let F41 = 44.42
 let G41 = G40+F41
-goto C39 A0
+goto G40 A0
