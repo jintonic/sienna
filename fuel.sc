@@ -252,4 +252,20 @@ let D29 = (B29-B28)/C29
 let E29 = 1.779
 let F29 = 24.36
 let G29 = G28+F29
-goto A29 A0
+let A30 = @dts(2016,8,20)
+fmt A30 "%F"
+let B30 = 203363
+let C30 = 10.617
+let D30 = (B30-B29)/C30
+let E30 = 1.999
+let F30 = 21.22
+let G30 = G29+F30
+let A31 = @dts(2016,9,4)
+fmt A31 "%F"
+let B31 = 203633
+let C31 = 12.272
+let D31 = (B31-B30)/C31
+let E31 = 1.969
+let F31 = 24.16
+let G31 = G30+F31
+goto G31 A0
