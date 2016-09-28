@@ -228,4 +228,11 @@ let D41 = C41-C40
 let E41 = D41/B41
 let F41 = 44.42
 let G41 = G40+F41
-goto G40 A0
+let A42 = @dts(2016,9,24)
+let B42 = (A42-A41)/3600/24
+let C42 = 204016
+let D42 = C42-C41
+let E42 = D42/B42
+let F42 = 51.04
+let G42 = G41+F42
+goto G42 A0
