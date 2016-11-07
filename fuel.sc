@@ -3,6 +3,7 @@
 
 set numeric color
 format 5 = "%F"
+format 6 = " %y-%m-%d %R"
 format A 10 2 5
 format B 7 0 0
 format C 7 3 0
@@ -288,8 +289,16 @@ let A34 = @dts(2016,10,10)
 fmt A34 "%F"
 let B34 = 204328
 let C34 = 6.892
-let D34 = (B34-B33)/C34
+let D34 = (B34-@nval("B",@myrow-1))/C34
 let E34 = 1.989
 let F34 = 13.71
-let G34 = G33+F34
-goto G34 A0
+let G34 = @nval("G",@myrow-1)+F34
+let A35 = @dts(2016,11,6)
+fmt A35 "%F"
+let B35 = 204641
+let C35 = 16.596
+let D35 = (B35-@nval("B",@myrow-1))/C35
+let E35 = 1.999
+let F35 = 33.18
+let G35 = @nval("G",@myrow-1)+F35
+goto D35 A0
