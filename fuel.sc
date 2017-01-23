@@ -309,4 +309,20 @@ let D36 = (B36-@nval("B",@myrow-1))/C36
 let E36 = 1.779
 let F36 = 24.28
 let G36 = @nval("G",@myrow-1)+F36
-goto G36 A0
+let A37 = @dts(2016,12,3)
+fmt A37 "%F"
+let B37 = 205174
+let C37 = 14.009
+let D37 = (B37-@nval("B",@myrow-1))/C37
+let E37 = 1.999
+let F37 = 28
+let G37 = @nval("G",@myrow-1)+F37
+let A38 = @dts(2017,1,22)
+fmt A38 "%F"
+let B38 = 205361
+let C38 = 13.699
+let D38 = (B38-@nval("B",@myrow-1))/C38
+let E38 = 2.099
+let F38 = 28.75
+let G38 = @nval("G",@myrow-1)+F38
+goto G38 A0
