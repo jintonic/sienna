@@ -3,7 +3,7 @@ dat <- read.table("oil.txt", header=TRUE, fill=TRUE)
 
 # mileage between oil changes
 pdf("mileage.pdf")
-hist(dat$dm, breaks=seq(2000,9000,400),
+hist(dat$dm, breaks=seq(1000,9000,400),
      border="red",
      col="yellow",
      las=1, # rotate y label by 90 degree
