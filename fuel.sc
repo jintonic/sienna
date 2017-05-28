@@ -3,15 +3,13 @@
 
 set numeric color
 format 5 = "%F"
+format 6 = " %y-%m-%d %R"
 format A 10 2 5
 format B 7 0 0
 format C 7 3 0
 format D 11 2 0
 format E 6 3 0
 format F 6 2 0
-format H 27 2 0
-color 1 = @white;@black
-color 7 = @white;@blue
 rightstring A0 = "date"
 rightstring B0 = "milage"
 rightstring C0 = "added"
@@ -252,4 +250,20 @@ let D29 = (B29-B28)/C29
 let E29 = 1.779
 let F29 = 24.36
 let G29 = G28+F29
-goto A29 A0
+let A30 = @dts(2017,4,1)
+fmt A30 "%F"
+let B30 = 206152
+let C30 = 13.479
+let D30 = (B30-B29)/C30
+let E30 = 2.089
+let F30 = 28.16
+let G30 = G29+F30
+let A31 = @dts(2017,5,10)
+fmt A31 "%F"
+let B31 = 206440
+let C31 = 5.166
+let D31 = (B31-B30)/C31
+let E31 = 2.199
+let F31 = 11.36
+let G31 = G30+F31
+goto D31 A0
