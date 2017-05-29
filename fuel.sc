@@ -322,20 +322,36 @@ let D38 = (B38-@nval("B",@myrow-1))/C38
 let E38 = 2.099
 let F38 = 28.75
 let G38 = @nval("G",@myrow-1)+F38
-let A39 = @dts(2017,4,1)
+let A39 = @dts(2017,2,25)
 fmt A39 "%F"
-let B39 = 206152
-let C39 = 13.479
+let B39 = 205661
+let C39 = 13.078
 let D39 = (B39-@nval("B",@myrow-1))/C39
-let E39 = 2.089
-let F39 = 28.16
+let E39 = 2.079
+let F39 = 27.19
 let G39 = @nval("G",@myrow-1)+F39
-let A40 = @dts(2017,5,10)
+let A40 = @dts(2017,3,20)
 fmt A40 "%F"
-let B40 = 206440
-let C40 = 5.166
+let B40 = 205861
+let C40 = 8.431
 let D40 = (B40-@nval("B",@myrow-1))/C40
-let E40 = 2.199
-let F40 = 11.36
+let E40 = 2.079
+let F40 = 17.53
 let G40 = @nval("G",@myrow-1)+F40
-goto G40 A0
+let A41 = @dts(2017,4,1)
+fmt A41 "%F"
+let B41 = 206152
+let C41 = 13.479
+let D41 = (B41-@nval("B",@myrow-1))/C41
+let E41 = 2.089
+let F41 = 28.16
+let G41 = @nval("G",@myrow-1)+F41
+let A42 = @dts(2017,5,10)
+fmt A42 "%F"
+let B42 = 206440
+let C42 = 5.166
+let D42 = (B42-@nval("B",@myrow-1))/C42
+let E42 = 2.199
+let F42 = 11.36
+let G42 = @nval("G",@myrow-1)+F42
+goto B40 A0
