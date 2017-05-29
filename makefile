@@ -6,7 +6,7 @@ PDF=cost.pdf mileage.pdf oil.pdf fuel.pdf
 
 sienna.pdf: $(PDF)
 	gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=$@ $^
-	rm -f $^
+	rm -f $^ *~
 
 cost.pdf: cost.R cost.dat
 	Rscript $<
