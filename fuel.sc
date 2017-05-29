@@ -268,7 +268,7 @@ let F31 = 24.16
 let G31 = G30+F31
 let A32 = @dts(2016,9,21)
 fmt A32 "%F"
-let B32 = 203941
+let B32 = 203951
 let C32 = 15.208
 let D32 = (B32-B31)/C32
 let E32 = 2.099
@@ -322,36 +322,53 @@ let D38 = (B38-@nval("B",@myrow-1))/C38
 let E38 = 2.099
 let F38 = 28.75
 let G38 = @nval("G",@myrow-1)+F38
-let A39 = @dts(2017,2,25)
+let A39 = @dts(2017,2,4)
 fmt A39 "%F"
-let B39 = 205661
-let C39 = 13.078
+let B39 = 205536
+let C39 = 9.516
 let D39 = (B39-@nval("B",@myrow-1))/C39
-let E39 = 2.079
-let F39 = 27.19
+let E39 = 2.069
+let F39 = 19.69
 let G39 = @nval("G",@myrow-1)+F39
-let A40 = @dts(2017,3,20)
+let A40 = @dts(2017,2,25)
 fmt A40 "%F"
-let B40 = 205861
-let C40 = 8.431
+let B40 = 205761
+let C40 = 13.078
 let D40 = (B40-@nval("B",@myrow-1))/C40
 let E40 = 2.079
-let F40 = 17.53
+let F40 = 27.19
 let G40 = @nval("G",@myrow-1)+F40
-let A41 = @dts(2017,4,1)
+let A41 = @dts(2017,3,2)
 fmt A41 "%F"
-let B41 = 206152
-let C41 = 13.479
+let B41 = 205901
+let C41 = 8.431
 let D41 = (B41-@nval("B",@myrow-1))/C41
-let E41 = 2.089
-let F41 = 28.16
+let E41 = 2.079
+let F41 = 17.53
 let G41 = @nval("G",@myrow-1)+F41
-let A42 = @dts(2017,5,10)
+let A42 = @dts(2017,4,1)
 fmt A42 "%F"
-let B42 = 206440
-let C42 = 5.166
+let B42 = 206152
+let C42 = 13.479
 let D42 = (B42-@nval("B",@myrow-1))/C42
-let E42 = 2.199
-let F42 = 11.36
+let E42 = 2.089
+let F42 = 28.16
 let G42 = @nval("G",@myrow-1)+F42
-goto B40 A0
+let A43 = @dts(2017,4,20)
+fmt A43 "%F"
+let B43 = 206340
+let C43 = 10.166
+let D43 = (B43-@nval("B",@myrow-1))/C43
+let E43 = 2.199
+let F43 = 22.36
+let G43 = @nval("G",@myrow-1)+F43
+rightstring H43 = "fake record"
+let A44 = @dts(2017,5,10)
+fmt A44 "%F"
+let B44 = 206440
+let C44 = 5.166
+let D44 = (B44-@nval("B",@myrow-1))/C44
+let E44 = 2.199
+let F44 = 11.36
+let G44 = @nval("G",@myrow-1)+F44
+goto H43 A0
