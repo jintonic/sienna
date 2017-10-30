@@ -1,5 +1,5 @@
 dat <- scan("cost.dat")
-lbl <- c("Oil", "Fuel", "Insurance", "Car", "Service")
+lbl <- c("Car", "Fuel", "Insurance", "Oil", "Service")
 pct <- round(dat/sum(dat)*100)
 lbl <- paste(lbl, pct) # add percents to labels
 lbl <- paste(lbl,"%",sep="") # add % to labels
