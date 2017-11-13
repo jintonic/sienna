@@ -8,9 +8,6 @@ format A 10 2 5
 format B 34 2 0
 format C 8 0 6
 format D 7 2 0
-format E 7 2 0
-color 1 = @white;@black
-color 7 = @white;@blue
 rightstring A0 = "when"
 rightstring B0 = "what"
 rightstring C0 = "mileage"
@@ -80,4 +77,9 @@ let A20 = @dts(2016,5,10)
 rightstring B20 = "washed"
 let D20 = 7
 let E20 = D20+E19
-goto E16 A0
+let A21 = @dts(2017,11,10)
+rightstring B21 = "battery changed"
+let C21 = 208651
+let D21 = 93.76
+let E21 = D21+E20
+goto E21 A0
