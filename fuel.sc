@@ -10,6 +10,8 @@ format C 7 3 0
 format D 11 2 0
 format E 6 3 0
 format F 6 2 0
+color 1 = @white;@black
+color 7 = @white;@blue
 rightstring A0 = "date"
 rightstring B0 = "milage"
 rightstring C0 = "added"
@@ -451,4 +453,28 @@ let D54 = (B54-@nval("B",@myrow-1))/C54
 let E54 = 2.409
 let F54 = 38.97
 let G54 = @nval("G",@myrow-1)+F54
-goto G54 A32
+let A55 = @dts(2017,11,22)
+fmt A55 "%F"
+let B55 = 208780
+let C55 = 7.813
+let D55 = (B55-@nval("B",@myrow-1))/C55
+let E55 = 2.219
+let F55 = 17.34
+let G55 = @nval("G",@myrow-1)+F55
+let A56 = @dts(2017,11,24)
+fmt A56 "%F"
+let B56 = 208922
+let C56 = 7.619
+let D56 = (B56-@nval("B",@myrow-1))/C56
+let E56 = 2.379
+let F56 = 18.13
+let G56 = @nval("G",@myrow-1)+F56
+let A57 = @dts(2017,12,2)
+fmt A57 "%F"
+let B57 = 209114
+let C57 = 9.002
+let D57 = (B57-@nval("B",@myrow-1))/C57
+let E57 = 2.179
+let F57 = 19.62
+let G57 = @nval("G",@myrow-1)+F57
+goto B57 A32
