@@ -3,12 +3,11 @@
 
 set numeric color
 format 5 = "%F"
+format 6 = " %y-%m-%d %R"
 format A 10 2 5
 format B 8 0 0
 format C 21 2 0
 format D 15 2 0
-color 1 = @white;@black
-color 7 = @white;@blue
 rightstring A0 = "date"
 rightstring B0 = "mileage"
 rightstring C0 = "what"
