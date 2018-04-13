@@ -10,6 +10,8 @@ format C 7 0 0
 format D 5 0 0
 format E 6 1 0
 format F 6 2 0
+color 1 = @white;@black
+color 7 = @white;@blue
 rightstring A0 = "date"
 rightstring B0 = "dd"
 rightstring C0 = "milage"
@@ -240,4 +242,11 @@ let D43 = C43-C41
 let E43 = D43/B43
 let F43 = 45
 let G43 = G42+F43
-goto G43 A0
+let A44 = @dts(2018,3,23)
+let B44 = (A43-A41)/3600/24
+let C44 = 210191
+let D44 = C44-C41
+let E44 = D44/B44
+let F44 = 75.06
+let G44 = G42+F44
+goto F44 A0
