@@ -565,4 +565,12 @@ let D68 = (B68-@nval("B",@myrow-1))/C68
 let E68 = 2.099
 let F68 = 25.41
 let G68 = @nval("G",@myrow-1)+F68
-goto C68 A32
+let A69 = @dts(2019,3,14)
+fmt A69 "%F"
+let B69 = 212138
+let C69 = 16.946
+let D69 = (B69-@nval("B",@myrow-1))/C69
+let E69 = 2.499
+let F69 = 42.35
+let G69 = @nval("G",@myrow-1)+F69
+goto F69 A32
